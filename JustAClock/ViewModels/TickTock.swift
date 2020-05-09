@@ -35,7 +35,7 @@ public class TickTock: ObservableObject
     public init(withFormat format: String)
     {
         self.format = format
-        self.dateString = format
+        self.dateString = ""
         self.subscribe()
     }
     

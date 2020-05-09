@@ -18,12 +18,17 @@ public struct ClockView: View
         DragGesture()
             .onChanged({
                 
-                print("\($0)")
+                let brightnessOffset: CGFloat = $0.translation.height
+                
+                self.backlight.brightness = -brightnessOffset
             })
     }
     
     @ObservedObject
     private var tickTock: TickTock = TickTock(withFormat: "HH:mm:ss")
+    
+    @State
+    private var backlight: Backlight = Backlight()
     
     // MARK: - Methods -
     // MARK: Initial Method
@@ -40,8 +45,10 @@ public struct ClockView: View
                 
                 Text(self.tickTock.dateString)
                     .font(Font.system(size: 200.0))
+                    .multilineTextAlignment(.center)
                     .minimumScaleFactor(0.5)
-                    .foregroundColor(Color.green)
+                    .foregroundColor(Color("TextColor"))
+                    .frame(width: 450.0)
                     .allowsHitTesting(false)
                 
                 Spacer().frame(width: 10.0)
