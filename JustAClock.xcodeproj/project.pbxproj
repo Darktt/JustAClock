@@ -88,7 +88,7 @@
 				55247EB62455375C00701C21 /* AppDelegate.swift */,
 				55247EB82455375C00701C21 /* SceneDelegate.swift */,
 				55247ECB2455378200701C21 /* Models */,
-				55247EDD245543A500701C21 /* ViewModes */,
+				55247EDD245543A500701C21 /* ViewModels */,
 				55247ECA2455377800701C21 /* Views */,
 				55247EE024556D4A00701C21 /* ViewControllers */,
 				55247EBC2455376100701C21 /* Assets.xcassets */,
@@ -132,12 +132,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		55247EDD245543A500701C21 /* ViewModes */ = {
+		55247EDD245543A500701C21 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				55247EDE245543CF00701C21 /* TickTock.swift */,
 			);
-			path = ViewModes;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		55247EE024556D4A00701C21 /* ViewControllers */ = {
