@@ -20,6 +20,7 @@
 		55247EE524556D9000701C21 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247EE324556D9000701C21 /* RootViewController.swift */; };
 		55247EE624556D9000701C21 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55247EE424556D9000701C21 /* RootViewController.xib */; };
 		55247EE82455742500701C21 /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247EE72455742500701C21 /* ClockManager.swift */; };
+		F2F65131246BF43B003EF92A /* Backlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F65130246BF43B003EF92A /* Backlight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		55247EE324556D9000701C21 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		55247EE424556D9000701C21 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		55247EE72455742500701C21 /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
+		F2F65130246BF43B003EF92A /* Backlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backlight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		55247ECB2455378200701C21 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2F65130246BF43B003EF92A /* Backlight.swift */,
 				55247EE72455742500701C21 /* ClockManager.swift */,
 			);
 			path = Models;
@@ -225,6 +228,7 @@
 				55247EB72455375C00701C21 /* AppDelegate.swift in Sources */,
 				55247EDF245543CF00701C21 /* TickTock.swift in Sources */,
 				55247EE524556D9000701C21 /* RootViewController.swift in Sources */,
+				F2F65131246BF43B003EF92A /* Backlight.swift in Sources */,
 				55247EE82455742500701C21 /* ClockManager.swift in Sources */,
 				55247ECD245537BC00701C21 /* ColokView.swift in Sources */,
 				55247EB92455375C00701C21 /* SceneDelegate.swift in Sources */,

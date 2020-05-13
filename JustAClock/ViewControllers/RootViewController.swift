@@ -14,6 +14,11 @@ public class RootViewController: UIViewController
     
     private let manager: ClockManger = ClockManger(withFormat: "HH:mm:ss")
     
+    private lazy var backlight: Backlight = {
+        
+        Backlight()
+    }()
+    
     @IBOutlet fileprivate weak var clockLabel: UILabel!
     
     // MARK: - Methods -
@@ -79,6 +84,10 @@ public class RootViewController: UIViewController
         }
         
         self.manager.updater = updater
+        
+        let gesture = UIPanGestureRecognizer(target: self, action: #selector(handlerPanGestureRecognizer(_:)))
+        
+        self.view.addGestureRecognizer(gesture)
     }
     
     deinit
@@ -91,7 +100,15 @@ public class RootViewController: UIViewController
 
 private extension RootViewController
 {
-    
+    @objc
+    func handlerPanGestureRecognizer(_ sender: UIPanGestureRecognizer)
+    {
+        let translation: CGPoint = sender.translation(in: self.view)
+        
+        self.backlight.brightness = translation.y
+        
+        sender.setTranslation(.zero, in: self.view)
+    }
 }
 
 // MARK: - Private Methons -

@@ -8,12 +8,11 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
 public class Backlight
 {
     // MARK: - Properties -
     
-    @State public var brightness: CGFloat = 0.0 {
+    public var brightness: CGFloat = 0.0 {
         
         willSet {
             
