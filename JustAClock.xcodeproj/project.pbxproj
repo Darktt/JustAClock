@@ -20,6 +20,8 @@
 		55247EE524556D9000701C21 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247EE324556D9000701C21 /* RootViewController.swift */; };
 		55247EE624556D9000701C21 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55247EE424556D9000701C21 /* RootViewController.xib */; };
 		55247EE82455742500701C21 /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247EE72455742500701C21 /* ClockManager.swift */; };
+		F262927E246D2DD90001702A /* BatteryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262927D246D2DD90001702A /* BatteryWatcher.swift */; };
+		F2629280246D38330001702A /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262927F246D38330001702A /* BatteryView.swift */; };
 		F2F65131246BF43B003EF92A /* Backlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F65130246BF43B003EF92A /* Backlight.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		55247EE324556D9000701C21 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		55247EE424556D9000701C21 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		55247EE72455742500701C21 /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
+		F262927D246D2DD90001702A /* BatteryWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWatcher.swift; sourceTree = "<group>"; };
+		F262927F246D38330001702A /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		F2F65130246BF43B003EF92A /* Backlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backlight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +118,7 @@
 			children = (
 				55247EBA2455375C00701C21 /* ContentView.swift */,
 				55247ECC245537BC00701C21 /* ColokView.swift */,
+				F262927F246D38330001702A /* BatteryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				55247EDE245543CF00701C21 /* TickTock.swift */,
+				F262927D246D2DD90001702A /* BatteryWatcher.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -228,8 +234,10 @@
 				55247EB72455375C00701C21 /* AppDelegate.swift in Sources */,
 				55247EDF245543CF00701C21 /* TickTock.swift in Sources */,
 				55247EE524556D9000701C21 /* RootViewController.swift in Sources */,
+				F262927E246D2DD90001702A /* BatteryWatcher.swift in Sources */,
 				F2F65131246BF43B003EF92A /* Backlight.swift in Sources */,
 				55247EE82455742500701C21 /* ClockManager.swift in Sources */,
+				F2629280246D38330001702A /* BatteryView.swift in Sources */,
 				55247ECD245537BC00701C21 /* ColokView.swift in Sources */,
 				55247EB92455375C00701C21 /* SceneDelegate.swift in Sources */,
 				55247EBB2455375C00701C21 /* ContentView.swift in Sources */,

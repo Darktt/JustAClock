@@ -30,9 +30,6 @@ public struct ClockView: View
     @State
     private var backlight: Backlight = Backlight()
     
-    // MARK: - Methods -
-    // MARK: Initial Method
-    
     public var body: some View {
         
         HStack(spacing: 10.0) {

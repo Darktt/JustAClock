@@ -14,6 +14,7 @@ import SwiftUI
 public class TickTock: ObservableObject
 {
     // MARK: - Properties -
+    
     @Published
     public private(set) var dateString: String
     

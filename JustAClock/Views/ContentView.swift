@@ -14,7 +14,17 @@ struct ContentView: View
 {
     var body: some View {
         
-        ClockView().background(Color.black).fillScreen()
+        VStack {
+            
+            HStack {
+                
+                Spacer()
+                BatteryView()
+                    .frame(height: 20.0, alignment: .trailing)
+            }
+            
+            ClockView().fillScreen()
+        }.background(Color.black)
     }
 }
 
