@@ -14,16 +14,22 @@ struct ContentView: View
 {
     var body: some View {
         
-        VStack {
-            
-            HStack {
-                
-                Spacer()
-                BatteryView()
-                    .frame(height: 20.0, alignment: .trailing)
-            }
+        ZStack {
             
             ClockView().fillScreen()
+            
+            VStack {
+                
+                HStack {
+                    
+                    Spacer()
+                    BatteryView()
+                        .frame(height: 20.0, alignment: .trailing)
+                }
+                
+                Spacer()
+            }
+            
         }.background(Color.black)
     }
 }
