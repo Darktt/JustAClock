@@ -22,6 +22,8 @@
 		55247EE82455742500701C21 /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247EE72455742500701C21 /* ClockManager.swift */; };
 		F262927E246D2DD90001702A /* BatteryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262927D246D2DD90001702A /* BatteryWatcher.swift */; };
 		F2629280246D38330001702A /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262927F246D38330001702A /* BatteryView.swift */; };
+		F2968FFE246E7A4400970DF2 /* BatteryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2968FFD246E7A4400970DF2 /* BatteryManager.swift */; };
+		F2969000246E7EBA00970DF2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2968FFF246E7EBA00970DF2 /* Utilities.swift */; };
 		F2F65131246BF43B003EF92A /* Backlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F65130246BF43B003EF92A /* Backlight.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		55247EE72455742500701C21 /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
 		F262927D246D2DD90001702A /* BatteryWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWatcher.swift; sourceTree = "<group>"; };
 		F262927F246D38330001702A /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		F2968FFD246E7A4400970DF2 /* BatteryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryManager.swift; sourceTree = "<group>"; };
+		F2968FFF246E7EBA00970DF2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F2F65130246BF43B003EF92A /* Backlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backlight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +132,8 @@
 			children = (
 				F2F65130246BF43B003EF92A /* Backlight.swift */,
 				55247EE72455742500701C21 /* ClockManager.swift */,
+				F2968FFD246E7A4400970DF2 /* BatteryManager.swift */,
+				F2968FFF246E7EBA00970DF2 /* Utilities.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +243,8 @@
 				F262927E246D2DD90001702A /* BatteryWatcher.swift in Sources */,
 				F2F65131246BF43B003EF92A /* Backlight.swift in Sources */,
 				55247EE82455742500701C21 /* ClockManager.swift in Sources */,
+				F2969000246E7EBA00970DF2 /* Utilities.swift in Sources */,
+				F2968FFE246E7A4400970DF2 /* BatteryManager.swift in Sources */,
 				F2629280246D38330001702A /* BatteryView.swift in Sources */,
 				55247ECD245537BC00701C21 /* ColokView.swift in Sources */,
 				55247EB92455375C00701C21 /* SceneDelegate.swift in Sources */,

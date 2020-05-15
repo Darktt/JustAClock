@@ -52,13 +52,15 @@ private extension BatteryWatcher
     {
         let subscription: AnyCancellable = Timer.publish(every: self.updateInterval, on: .main, in: .common)
             .autoconnect()
+            .ignoreOutput()
             .map({ _ in self.device.batteryLevel })
             .sink {
+                
                 [weak self] in
                 
                 self?.level = ($0 * 100.0).format("%.0f%%")
                 self?.updateBatteryImage(via: $0)
-        }
+            }
         
         self.timerSubscription = subscription
     }

@@ -13,6 +13,7 @@ public class RootViewController: UIViewController
     // MARK: - Properties -
     
     private let manager: ClockManger = ClockManger(withFormat: "HH:mm:ss")
+    private let batteryManager: BatteryManager = BatteryManager(withUpdateInterval: kBatteryUpdateInterval)
     
     private lazy var backlight: Backlight = {
         
@@ -20,6 +21,8 @@ public class RootViewController: UIViewController
     }()
     
     @IBOutlet fileprivate weak var clockLabel: UILabel!
+    @IBOutlet fileprivate weak var batteryLevelLabel: UILabel!
+    @IBOutlet fileprivate weak var batteryImage: UIImageView!
     
     // MARK: - Methods -
     // MARK: Initial Method
@@ -83,7 +86,15 @@ public class RootViewController: UIViewController
             self.clockLabel.isHidden = false
         }
         
+        let batteryUpdater: BatteryManager.Updater = {
+            
+            [unowned self] in
+            
+            self.batteryLevelLabel.text = $0 + $1
+        }
+        
         self.manager.updater = updater
+        self.batteryManager.updater = batteryUpdater
         
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(handlerPanGestureRecognizer(_:)))
         

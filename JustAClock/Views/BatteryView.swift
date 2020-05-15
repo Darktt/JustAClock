@@ -14,11 +14,11 @@ public struct BatteryView: View
     // MARK: - Properties -
     
     @ObservedObject
-    private var batterWatcher: BatteryWatcher = BatteryWatcher(updateInterval: 500.0)
+    private var batterWatcher: BatteryWatcher = BatteryWatcher(updateInterval: kBatteryUpdateInterval)
     
     public var body: some View {
         
-        HStack {
+        HStack(alignment: .center) {
             
             Text(self.batterWatcher.level)
                 .fontWeight(.bold)
