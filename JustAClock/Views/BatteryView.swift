@@ -18,7 +18,7 @@ public struct BatteryView: View
     
     public var body: some View {
         
-        HStack(alignment: .center) {
+        HStack {
             
             Text(self.batterWatcher.level)
                 .fontWeight(.bold)

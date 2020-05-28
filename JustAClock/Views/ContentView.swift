@@ -16,15 +16,20 @@ struct ContentView: View
         
         ZStack {
             
+            Color.black.edgesIgnoringSafeArea(.all)
+            
             ClockView().fillScreen()
             
             VStack {
+                
+                Spacer().frame(height: 5.0)
                 
                 HStack {
                     
                     Spacer()
                     BatteryView()
                         .frame(height: 20.0, alignment: .trailing)
+                    Spacer().frame(width: 5.0)
                 }
                 
                 Spacer()
