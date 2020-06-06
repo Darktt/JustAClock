@@ -90,7 +90,7 @@ public class RootViewController: UIViewController
             
             [unowned self] in
             
-            self.batteryLevelLabel.text = $0 + $1
+            self.batteryLevelLabel.text = $0
         }
         
         self.manager.updater = updater
@@ -116,7 +116,7 @@ private extension RootViewController
     {
         let translation: CGPoint = sender.translation(in: self.view)
         
-        self.backlight.brightness = translation.y
+        self.backlight.brightness = -translation.y
         
         sender.setTranslation(.zero, in: self.view)
     }

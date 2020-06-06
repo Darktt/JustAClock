@@ -13,7 +13,18 @@ public class BatteryManager
 {
     // MARK: - Properties -
     
-    public var updater: Updater?
+    public var updater: Updater? {
+        
+        willSet {
+            
+            self.stopUpdate()
+        }
+        
+        didSet {
+            
+            self.startUpdate()
+        }
+    }
     
     private let device: UIDevice = UIDevice.current
     
@@ -28,7 +39,6 @@ public class BatteryManager
         self.updateInterval = updateInterval
         
         self.device.isBatteryMonitoringEnabled = true
-        self.startUpdate()
     }
     
     deinit
@@ -49,9 +59,8 @@ private extension BatteryManager
             
             let batteryLevel: Float = self.device.batteryLevel
             let level: String = (batteryLevel * 100.0).format("%.0f%%")
-            let batteryIcon: String = self.convertBatteryIcon(via: batteryLevel)
             
-            self.updater?(level, batteryIcon)
+            self.updater?(level)
         }
         
         let timer = Timer.every(self.updateInterval, handler: timerHandler)
@@ -71,29 +80,11 @@ private extension BatteryManager
         
         self.timer = nil
     }
-    
-    private func convertBatteryIcon(via level: Float) -> String
-    {
-        var batteryIcon: String!
-        
-        switch level {
-        case 0.26 ... 1.0:
-            batteryIcon = "􀛨"
-            
-        case 0.10 ... 0.25:
-            batteryIcon = "􀛩"
-            
-        default:
-            batteryIcon = "􀛪"
-        }
-        
-        return batteryIcon
-    }
 }
 
 // MARK: - Clourse -
 
 public extension BatteryManager
 {
-    typealias Updater = (_ level: String, _ batteryIcon: String) -> Void
+    typealias Updater = (_ level: String) -> Void
 }
