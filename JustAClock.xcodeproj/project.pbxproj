@@ -24,6 +24,7 @@
 		F2969000246E7EBA00970DF2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2968FFF246E7EBA00970DF2 /* Utilities.swift */; };
 		F2AB035724AB3B1500ABA300 /* SwiftExtensions.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB035624AB3B1500ABA300 /* SwiftExtensions.xcframework */; };
 		F2AB035824AB3B1500ABA300 /* SwiftExtensions.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB035624AB3B1500ABA300 /* SwiftExtensions.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F2ADD2FC25B6DE4E0096FE5C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADD2FB25B6DE4E0096FE5C /* SettingView.swift */; };
 		F2F65131246BF43B003EF92A /* Backlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F65130246BF43B003EF92A /* Backlight.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		F2968FFD246E7A4400970DF2 /* BatteryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryManager.swift; sourceTree = "<group>"; };
 		F2968FFF246E7EBA00970DF2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F2AB035624AB3B1500ABA300 /* SwiftExtensions.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SwiftExtensions.xcframework; sourceTree = "<group>"; };
+		F2ADD2FB25B6DE4E0096FE5C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F2F65130246BF43B003EF92A /* Backlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backlight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				55247EBA2455375C00701C21 /* ContentView.swift */,
 				55247ECC245537BC00701C21 /* ColokView.swift */,
 				F262927F246D38330001702A /* BatteryView.swift */,
+				F2ADD2FB25B6DE4E0096FE5C /* SettingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				55247EE82455742500701C21 /* ClockManager.swift in Sources */,
 				F2969000246E7EBA00970DF2 /* Utilities.swift in Sources */,
 				F2968FFE246E7A4400970DF2 /* BatteryManager.swift in Sources */,
+				F2ADD2FC25B6DE4E0096FE5C /* SettingView.swift in Sources */,
 				F2629280246D38330001702A /* BatteryView.swift in Sources */,
 				55247ECD245537BC00701C21 /* ColokView.swift in Sources */,
 				55247EB92455375C00701C21 /* SceneDelegate.swift in Sources */,

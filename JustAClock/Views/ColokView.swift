@@ -16,12 +16,23 @@ public struct ClockView: View
     private var dragGesture: some Gesture {
         
         DragGesture()
-            .onChanged({
+            .onChanged {
                 
                 let brightnessOffset: CGFloat = $0.translation.height
                 
                 self.backlight.brightness = -brightnessOffset
-            })
+            }
+    }
+    
+    private var tapGesture: some Gesture {
+        
+        TapGesture()
+            .onEnded {
+                
+                _ in
+                
+                self.needsPresent.toggle()
+            }
     }
     
     @ObservedObject
@@ -29,6 +40,9 @@ public struct ClockView: View
     
     @State
     private var backlight: Backlight = Backlight()
+    
+    @State
+    private var needsPresent: Bool = false
     
     public var body: some View {
         
@@ -55,6 +69,11 @@ public struct ClockView: View
         }.fillScreen()
         .background(Color.black)
         .gesture(self.dragGesture)
+        .gesture(self.tapGesture)
+        .sheet(isPresented: self.$needsPresent, content: {
+            
+            SettingView(backlight: self.backlight)
+        })
     }
 }
 
